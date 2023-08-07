@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh; 
+}
+
+.all{
+    width: 100%;
+    height: 100%;
+    background-color: #121321;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cerc1{
+    z-index: 1;
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background:linear-gradient(
+        90deg,
+        #9c27b0,
+        white
+    );
+    border-radius: 50%;
+    transform: translate(-150px,-100px);
+
+}
+
+.cerc2{
+    z-index: 1;
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background:linear-gradient(
+        90deg,
+        white,
+        #9c27b0
+    );
+    border-radius: 50%;
+    transform: translate(150px,100px);
+    opacity: 0.5;
+}
+
+.card{
+    z-index: 2;
+    width: 400px;
+    height: 200px;
+}
+
+.cardfata{
+
+    padding:20px;
+    border-radius: 10%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.25);
+    backdrop-filter: blur(25px);
+}
+
+.cardfataprimurand{
+    justify-content: space-between; 
+    display: flex;
+    align-items: center;
+
+}
+
+.logoh1{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin-right: 10px;
+}
+
+h1{
+    color: white;
+    font-size: 18px;
+    margin-left:15px;
+}
+
+.logo{
+    object-fit: cover;
+    width: 50px;
+    height: 30px;
+}
+
+.chip{
+
+    object-fit: cover;
+    width: 50px;
+    height: 30px;
+}
+
+.cardnmbsinmb{
+    margin-top: 20px;
+}
+
+h2{
+    color: white;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.numarcard{
+    color: white;
+    letter-spacing:0.2ch  
+}
+
+.prenumevald{
+    margin-top: 25px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prenume{
+    margin-top: 5px;
+}
+
+.vada{
+    margin-right: 10px;
+    
+}
+.valid{
+    font-size: 10px;
+}
+
+.data{
+    margin-top: 5px;
+    letter-spacing: 0.1ch;
+}
+
+.cardspate{
+    padding:15px 20px;
+    border-radius: 10%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.25);
+    backdrop-filter: blur(25px);
+    transform: rotateY(180deg);
+}
+
+
+.spateprimurand{
+    font-size: 10px;
+    color: white;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.blackrand{
+    height: 40px;
+    background: black;
+    width: 100%;
+    left:0;
+}
+
+.chenarcifre{
+    margin-top: 10px;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.chenar{
+    height: 27px;
+    border-radius: 15%;
+    width: 285px;
+    background-color: white;
+}
+
+.whitee{
+    background-color: white;
+    height: 3px;
+}
+
+.greyy{
+    background-color: grey;
+    height: 3px;
+}
+
+.cifre{
+    width: 27px;
+    padding-top: 3px;
+    margin-top:3px;
+    border-radius: 15%;
+    background-color: white;
+    height: 20px;
+}
+
+.pcifre{
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 0.1ch;
+    text-align: center;
+}
+
+.lastp{
+    margin-top: 15px;
+    row-gap: 1px;
+}
+
+.pultim{
+    font-size: 8px;
+    color: white;
+}

@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.all{
+    width: 100%;
+    height: 100%;
+    background-image: url(Assests/keyboard.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.sideall{
+
+    
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid white;
+    padding-top: 10px;
+    width: 250px;
+    left:-250px;
+    height: 100vh;
+    transition: left 0.3s linear;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.cdsix{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+ul{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    list-style-type: none;
+}
+
+nav li{
+
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+
+}
+
+.lip{
+    color: white;
+    width: 100px;
+
+}
+
+.lip:hover{
+    cursor: pointer;
+}
+
+nav li:hover{
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
+}
+
+.socialmedia{
+    height: calc(100);
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    padding-bottom: 25px;
+    text-decoration: none;
+}
+
+#check{
+    display: none;
+}
+
+.btn1 p{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.3 linear;
+    opacity: 1;
+}
+
+.btn2 p{
+    font-size: 25px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3 linear;
+    opacity: 1;
+}
+
+.btn1 p:hover{
+    font-size: 24px;
+}
+
+#check:checked ~.sideall{
+    left:0px;
+}
+
+#check:checked ~ .btn1 p{
+    opacity: 0;
+}
+
+#check:not(:checked) ~ .sideall {
+    left: -100%;
+}
+
+#check:checked ~ .btn2 p{
+    opacity: 1;
+}

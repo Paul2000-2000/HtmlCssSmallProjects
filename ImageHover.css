@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+
+.card{
+    width: 450px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+
+.imgcard{
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 10px solid white;
+    position: absolute;
+}
+
+    #imgcard1 {
+    left: 0; 
+  }
+  
+    #imgcard2 {
+    left: 50px; 
+    z-index: 1; 
+  }
+  
+  #imgcard3 {
+    left: 100px; 
+    z-index: 2; 
+  }
+
+    
+  #imgcard4 {
+    left: 150px; 
+    z-index: 3; 
+  }
+  
+  #imgcard5 {
+    left: 200px; 
+    z-index: 4; 
+  }
+
+  #imgcard6 {
+    left: 250px; 
+    z-index: 5; 
+  }
+
+
+
+    .images{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+    }
+ 
+  .imgjos{
+    width: 50px;
+    height: 50px;
+    border:12px solid white;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+  }
+
+  #imgImages6:hover ~ .content .card #imgcard6 {
+    border: 12px solid red;
+  }
+  
+

@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.all{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dad3f8;
+}
+
+.chenar{
+    height: 225px;
+    width: 450px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h1{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.stangadreapta{
+    display: flex;
+}
+
+#home,#blog,#help,#code,#about{
+    display: none;
+}
+
+.stanga{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+
+    padding-top:5px ;
+    text-align: center;
+    font-size: 13px;
+    height: 30px;
+    width: 80px;
+}
+
+label:hover{
+    cursor: pointer;
+    
+}
+
+.dreapta{
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+h2{
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+h1::selection,p::selection,h2::selection{
+    color: white;
+    background-color:blueviolet;
+}
+
+p{
+    font-size: 12px;
+}
+
+
+
+#home:checked ~ .stanga #l1,
+#blog:checked ~ .stanga #l2,
+#help:checked ~ .stanga #l3,
+#code:checked ~ .stanga #l4,
+#about:checked ~ .stanga #l5
+{
+    color: white;
+    background-color:blueviolet;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+
+
+#home:checked ~ .dreapta .home {
+    display: block;
+}
+
+#home:checked ~ .dreapta .blog,
+#home:checked ~ .dreapta .help,
+#home:checked ~ .dreapta .code,
+#home:checked ~ .dreapta .about{
+    display: none;
+}
+
+#blog:checked ~ .dreapta .blog{
+    display: block;
+}
+
+#blog:checked ~ .dreapta .home,
+#blog:checked ~ .dreapta .help,
+#blog:checked ~ .dreapta .code,
+#blog:checked ~ .dreapta .about{
+    display: none;
+}
+
+#help:checked ~ .dreapta .help{
+    display: block;
+}
+
+#help:checked ~ .dreapta .home,
+#help:checked ~ .dreapta .blog,
+#help:checked ~ .dreapta .code,
+#help:checked ~ .dreapta .about{
+    display: none;
+}
+
+#code:checked ~ .dreapta .code{
+    display: block;
+}
+
+#code:checked ~ .dreapta .home,
+#code:checked ~ .dreapta .blog,
+#code:checked ~ .dreapta .help,
+#code:checked ~ .dreapta .about{
+    display: none;
+}
+
+
+#about:checked ~ .dreapta .about{
+    display: block;
+}
+
+#about:checked ~ .dreapta .home,
+#about:checked ~ .dreapta .blog,
+#about:checked ~ .dreapta .help,
+#about:checked ~ .dreapta .code{
+    display: none;
+}

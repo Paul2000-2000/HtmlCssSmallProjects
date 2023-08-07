@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(375deg,#1cc7d0,#2ede98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+
+.card{
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    transform: rotateY(0deg);
+    transition: 0.7s cubic-bezier(0.4,0.2,0.2,1);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card .fata{
+    background-color: white;
+    transform: rotateY(0deg); /* Add this line to keep .fata visible initially */
+    z-index: 1; /* Add this line to place .fata in front of .spate */
+}
+
+#img1{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 3px;
+    object-fit: cover;
+    
+}
+
+.card .spate{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+#img2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(375deg, #1cc7d0, #2ede98) 1;
+}
+
+h1{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.subh1{
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.retele{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.face , .tw ,.ins, .yt{
+    background: linear-gradient(375deg,#1cc7d0,#2ede98);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.card:hover > .fata{
+    transform: rotateY(-180deg);
+    z-index: -1; /* Update z-index to -1 to place .fata behind .spate on hover */
+}
+
+
+
+.card:hover > .spate{
+    transform: rotateY(0deg);
+    z-index: 1;
+}

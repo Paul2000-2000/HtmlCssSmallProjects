@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+}
+
+.primaparte{
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    height: 40%;
+    background-color: blue;
+    border-bottom: 2px solid blue;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.primaparte img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid white;
+    top:20px;
+    position: relative;
+}
+
+.douaparte{
+    height: 70%;
+    background-color: white;
+    padding: 0;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    line-height: 0.5;
+    
+}
+
+h1{
+    margin-top: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.retele ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.retele img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.retele li{
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+.butoane{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    
+}
+
+button{
+    background-color: blue;
+    color:white;
+    border-radius: 30%;
+    padding: 5px 10px;
+}
+
+.lkcmsh ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.lkcmsh img{
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+}
+
+.lkcmsh li{
+    list-style-type: none;
+    padding-right: 40px;
+    position: relative;
+    
+}
+
+
+.lkcmsh li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 1px;
+    background-color: grey;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+

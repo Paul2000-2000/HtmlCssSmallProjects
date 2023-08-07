@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.all{
+    width: 100%;
+    height: 100%;
+}
+
+
+.partealba{
+    width: 100%;
+    height: 50vh;
+    background-color: red;
+}
+
+.partealbastra{
+    width: 100%;
+    height: 50vh;
+    background-color: blue;
+    padding-top: 15px;
+}
+
+.liniesus{
+    padding-right: 30px;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    height: 30%;
+}
+
+
+h1{
+
+    color:white;
+    font-size: 30px;
+}
+
+.retele{
+    padding-right: 30px;
+}
+
+a{
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.text{
+    padding-top: 30px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 55%;
+}
+
+h2{
+    font-size: 16px;
+    color: white;
+}
+
+.ptext1{
+    color: white;
+    font-size: 12px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.ptext{
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.ptext:hover , .ptext1:hover{
+    
+    text-decoration:underline;
+}
+
+.lit{
+    border-bottom: 2px solid white;
+}
+
+.comp, .serv , .acc ,.cou ,.sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.sub{
+    padding-bottom:20px;
+}
+
+#inp1{
+    margin-top: 10px;
+    width: 200px;
+    height: 25px;
+    padding-left: 7px;
+    font-size: 12px;
+}
+
+#but1{
+    margin-top: 5px;
+    width: 200px;
+    font-size: 12px;
+    height: 25px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer{
+    background-color: blueviolet;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    color: white;
+    height: 15%;
+}
+
+.f1{
+    padding-left: 50px;
+    display: flex;
+}
+
+.f2{
+    display: flex;
+    padding-right: 50px;
+}
+
+.da{
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.da:hover{
+    text-decoration: underline;
+}

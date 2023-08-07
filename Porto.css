@@ -1,0 +1,312 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.all{
+   
+    width: 100%;
+    height: 100%;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+
+.start{
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 30px;
+    background-image: url("Assests/manlookporto.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+header{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.leftp{
+    padding-left: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+.phe{
+    letter-spacing: 0.2ch;
+    cursor: pointer;
+}
+
+.sphead{
+    color: red;
+}
+
+.midbara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap:30px;
+    font-size: 10px;
+}
+
+a{
+    text-decoration: none;
+    color:white
+}
+
+a:hover{
+    color: red;
+}
+
+.baranav{
+    cursor: pointer;
+}
+
+.baranav:hover{
+    color: red;
+}
+
+.dreaptab{
+    margin-right: 40px;
+}
+
+#buthead{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    width: 90px;
+    height: 25px;
+    font-size: 10px;
+    border: none;
+    letter-spacing: 0.2ch;
+    cursor: pointer;
+}
+
+#buthead:hover{
+    transform: scale(1,1);
+}
+
+.afteheader{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.pafthed{
+    color: white;
+    font-size: 13px;
+    letter-spacing: 0.2ch;
+    padding-bottom: 10px;
+}
+
+h1{
+    color: white;
+    letter-spacing: 0.1ch;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.sph1{
+    color: red;
+}
+
+h2{
+    color: white;
+    font-size: 15px;
+}
+
+#inpafter{
+    margin-top: 25px;
+    border-radius: 10px;
+    width: 250px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 10px;
+    border: 1px solid red;
+}
+
+.AboutMe{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.ableft{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#imgab{
+   margin-top: 30px;
+    width: 65%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.abright{
+    padding-left: 40px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center
+}
+
+.abmare{
+    color: white;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.dabmare{
+    color:white;
+    font-size: 14px;
+}
+
+.spdabmare{
+    color:Red;
+    
+}
+
+.ptextab{
+    color: white;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+#butab{
+    width: 80px;
+    height: 30px;
+    font-size: 10px;
+    color: white;
+    background-color: red;
+    border-radius: 25px;
+    border:none;
+    cursor: pointer;
+}
+
+
+.ourservices{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.scrisour{
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.pscrisour{
+    color: white;
+    font-size: 45px;
+}
+
+.optiuni{
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    
+}
+
+.optiune{
+    background-color: grey;
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+
+.semn{
+    color:red;
+    margin-bottom: 15px;
+}
+
+.titluopt{
+    font-size: 14px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.descopt{
+    font-size: 10px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.butopt{
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.skillsss{
+    
+    width: 100%;
+    height: 40vh;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.pskill{
+    
+    color: white;
+    font-size: 15px;
+}
+
+#butskil{
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.contact{
+    height: 40vh;
+    background-color: black;
+}

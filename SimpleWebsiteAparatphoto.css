@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    width: 100%;
+    height: 100vh;
+    background-image: url(Assests/apratpohot.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.barasus{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.barastanga{
+    margin-left: 55px ;
+    cursor: pointer;
+}
+
+h1{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: white;
+    font-size: 25px;
+}
+
+.baradreapta{
+    margin-right: 55px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+span{
+    width: 60px;
+    font-size: 15px;
+    padding-top: 10px;
+    color: white;
+    /*padding-right: 15px;*/
+}
+
+span:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.rest{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-height: calc(100vh - 50px); /* Adjust the value as needed */
+}
+
+h2,h3{
+    color: white;
+    font-size: 30px;
+}
+
+h3{
+    
+    margin-top: 10px;
+}
+
+h2::selection,h3::selection{
+    color: black;
+    background-color: white ;
+    opacity: 0.5;
+}
+
+.butoane{
+    margin-top: 10px;
+    display: flex;
+
+}
+
+.learn{
+    color: white;
+    margin-right: 13px;
+    width: 90px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10%;
+}
+
+.learn:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.sub{
+    width: 90px;
+    height: 30px;
+    margin-left: 13px;
+    background-color: white;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+}
